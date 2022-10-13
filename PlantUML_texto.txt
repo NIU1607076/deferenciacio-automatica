@@ -1,0 +1,105 @@
+@startuml
+skinparam classAttributeIconSize 0
+
+Constant ..up|> Expression
+X ..up|> Expression
+BinaryOperator ..up|> Expression
+BinaryOperator o--> "2" Expression
+
+Add --up|> BinaryOperator
+Substract --up|> BinaryOperator
+Multiply --up|> BinaryOperator
+Divide --up|> BinaryOperator
+Power --up|> BinaryOperator
+Exponential --up|> BinaryOperator
+Logarithm --up|> BinaryOperator
+
+Sin ..up|> Expression
+Sin o--> "1" Expression
+Cos ..up|> Expression
+Cos o--> "1" Expression
+
+
+
+interface Expression {
++evaluate(DualNumber) : DualNumber 
+}
+
+class Constant {
+-value: double
++Constant(double)
++evaluate(DualNumber): DualNumber
+}
+
+class X {
++X()
++evaluate(DualNumber): DualNumber
+}
+
+abstract BinaryOperator {
+#left: Expression
+#right: Expression
++BinaryOperator(Expression, Expression)
+}
+
+class Sin {
+-expr: Expression
++Sin(Expression)
++evaluate(DualNumber): DualNumber
+}
+
+class Cos {
+-expr: Expression
++Cos(Expression)
++evaluate(DualNumber): DualNumber
+}
+
+class Add {
++Add(Expression, Expression)
++evaluate(DualNumber): DualNumber
+}
+
+class Substract {
++Substract(Expression, Expression)
++evaluate(DualNumber): DualNumber
+}
+
+class Multiply {
++Multiply(Expression, Expression)
++evaluate(DualNumber): DualNumber
+}
+
+class Divide {
++Divide(Expression, Expression)
++evaluate(DualNumber): DualNumber
+}
+
+class Power {
++Power(Expression, Expression)
++evaluate(DualNumber): DualNumber
+}
+
+class Logarithm {
++Logarithm(Expression, Expression)
++evaluate(DualNumber): DualNumber
+}
+
+class Exponential {
++Exponential(Expression, Expression)
++evaluate(DualNumber): DualNumber
+}
+
+class DualNumber {
++u: double
++uprime: double
++DualNumber (double, double)
++toString(): String
+}
+
+class Main {
+{static} -f(double) : double
+{static} -df(double): double
+{static} +main(String[]args)
+}
+
+@enduml
