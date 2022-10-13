@@ -6,7 +6,7 @@ public class Exponential implements Expression {
     }
 
     public DualNumber evaluate(DualNumber dn) {
-        dn1 = expr.evaluate(dn);
+        DualNumber dn1 = expr.evaluate(dn);
         return new DualNumber(Math.exp(dn1.u), dn1.uprime * Math.exp(dn1.u));
     }
 }

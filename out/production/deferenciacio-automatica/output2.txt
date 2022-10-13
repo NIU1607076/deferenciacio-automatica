@@ -1,0 +1,15 @@
+real
+f(12.0) = 0.8711474010323408
+f'(12.0) = 11.784518253563377
+calculat
+f(12.0) = 152.0
+f'(12.0) = 24.0
+diferencia valor -151.12885259896765
+diferencia derivada -12.215481746436623
+derivada per diferencies finites
+per epsilon 1.0E-6,11.784267848646834,diferencia 2.504049165423794E-4
+per epsilon 1.0E-8,11.784516729118621,diferencia 1.5244447553186546E-6
+per epsilon 1.0E-10,11.784589970531556,diferencia -7.171696817920292E-5
+per epsilon 1.0E-12,11.792566922963488,diferencia -0.008048669400110953
+
+Process finished with exit code 0

@@ -1,0 +1,4 @@
+Martin Kaplan 1607076 - en general tot el codi
+Vlad Sobol 1503148 - en general tot el codi
+Alejo de Urrengoechea 1569298 - Diagrama de classes i coses varies
+Arnau Masana 1569115 - en general tot el codi

@@ -1,0 +1,16 @@
+real
+f(4.0) = -0.9576594803233841
+f'(4.0) = 2.3032265333205353
+calculat
+f(4.0) = 24.0
+f'(4.0) = 8.0
+diferencia valor -24.957659480323382
+diferencia derivada -5.696773466679465
+derivada per diferencies finites
+per epsilon 1.0E-6,2.3032574650860838,diferencia -3.093176554846977E-5
+per epsilon 1.0E-8,2.303226820377091,diferencia -2.870565558588112E-7
+per epsilon 1.0E-10,2.303226498412414,diferencia 3.490812128248422E-8
+per epsilon 1.0E-12,2.3033797091898123,diferencia -1.5317586927698912E-4
+
+Process finished with exit code 0
+
