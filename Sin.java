@@ -6,6 +6,7 @@ public class Sin implements Expression {
     }
 
     public DualNumber evaluate(DualNumber dn) {
-        return new DualNumber(Math.sin(dn.u), dn.uprime * Math.cos(dn.u));
+        dn1 = expr.evaluate(dn);
+        return new DualNumber(Math.sin(dn1.u), dn1.uprime * Math.cos(dn1.u));
     }
 }

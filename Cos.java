@@ -6,6 +6,7 @@ public class Cos implements Expression {
     }
 
     public DualNumber evaluate(DualNumber dn) {
-        return new DualNumber(Math.cos(dn.u), -dn.uprime * Math.sin(dn.u));
+        dn1 = expr.evaluate(dn);
+        return new DualNumber(Math.cos(dn1.u), -dn1.uprime * Math.sin(dn1.u));
     }
 }
